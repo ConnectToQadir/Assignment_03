@@ -40,9 +40,10 @@
 
 #navBar .logo h1{
     border:px solid green;
-    font-size:3.3vw;
+    font-size:2.5vw;
     color:#fff;
 }
+
 
 .navLinks{
     border:px solid green;
@@ -100,9 +101,19 @@
 }
 
 .headerText h1{
-    font-size:50px;
+    font-size:4rem;
     font-weight:700;
     margin-top:20px;
+}
+
+@media (max-width:1100px){
+    .headerText h1{
+        font-size:calc(3vw + 1rem);
+    }
+
+    #navBar .logo h1{
+        font-size:calc(2vw + 1rem); 
+    }
 }
 
 .headerText h2{
@@ -151,7 +162,15 @@
     border-radius:10px;
     background-color:#fff;
     box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition:.5s;
 }
+
+.headerImages .img1:hover{
+    z-index:1;
+    width:310px;
+}
+
 .headerImages .img2{
     border:3px solid #fe5858;
     position: absolute;
@@ -161,6 +180,12 @@
     border-radius:10px;
     background-color:#fff;
     box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition:.5s;
+}
+
+.headerImages .img2:hover{
+    width:260px;
 }
 
 .whiteBox{
