@@ -1,0 +1,64 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+/*------------------------------------------*/
+#header{
+    background-image: url();
+}
+/*------------------------------------------*/
+#navBar{
+    border:1px solid red;
+    display:flex;
+    justify-content:space-between;
+    padding:0% 4%;
+}
+
+#navBar .logo{
+    border:1px solid red;
+    display:flex;
+    align-items: center;
+}
+
+#navBar .logo h1{
+    border:1px solid green;
+    font-size:3.3vw;
+}
+
+.navLinks{
+    border:1px solid green;
+    display:flex;
+    align-items: center;
+}
+
+.navLinks ul{
+    display:flex;
+    list-style:none;
+}
+
+.navLinks ul li{
+    border:1px solid orange;
+    padding:10px;
+}
+
+.navLinks ul li a{
+    text-decoration: none;
+    font-size:13px;
+}
+
+.tryForFreeButtonDiv{
+    border:1px solid green;
+    display: flex;
+    align-items:center;
+}
+
+.tryForFreeButton{
+    border:1px solid orchid;
+    width:100px;
+    font-size:16px;
+    height:25px;
+    border-radius:15px;
+}
