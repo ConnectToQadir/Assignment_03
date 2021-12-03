@@ -241,11 +241,12 @@
 }
 
 /*------------------------------------------*/
-.hostingServicesChild {
+.hostingServices {
     border: px solid red;
+    background-color:red;
 }
 
-.hostingServicesChild hr {
+.hostingServicesChild>hr {
     width: 20%;
     border: 1.5px solid gray;
     margin: auto;
@@ -267,15 +268,36 @@
 }
 
 .mainRow {
-    border: 1px solid red;
+    border: px solid red;
     margin-top: 8vh;
     display: flex;
     justify-content: space-around;
 }
 
 .QuickBookscol {
-    border: 1px solid green;
+    border: px solid green;
     width: 22%;
+    box-shadow: -13px 0px 50px -8px rgba(0,0,0,0.4);
+    background-color:#fff;
+}
+
+
+
+.cloudHosting {
+    border: px solid green;
+    width: 76%;
+    box-shadow: -50px 19px 50px -23px rgba(0,0,0,0.28);
+    background-color:#fff;
+}
+
+@media (max-width:992px) {
+    .QuickBookscol {
+        width: 100%;
+    }
+
+    .cloudHosting {
+        width: 100%;
+    }
 }
 
 .QuickBookscol img {
@@ -297,29 +319,103 @@
     font-size: 16px;
 }
 
-.QuickBooksTextRow .bookNowButton {
-    border: 1px solid green;
+.QuickBooksTextRow .bookNowButton, .comparePlans {
+    border: px solid green;
     margin: 5vh 0 4vh 0;
     width: 130px;
     height: 45px;
     border-radius: 40px;
     background: rgb(230, 154, 6);
-    background: linear-gradient(270deg, rgba(230, 154, 6, 1) 0%, rgba(153, 0, 0, 1) 70%);
+    background: linear-gradient(270deg, rgb(237 149 22) 0%, rgb(255 73 73) 70%);
+    border:none;
     color: #fff;
 }
 
-.cloudHosting {
-    border: 1px solid green;
-    width: 76%;
+.cloudHostingContent {
+    border: px solid red;
+    padding: 0% 3%;
 }
 
-@media (max-width:950) {
+.cloudHostingContent h1 {
+    border: px solid green;
+    text-align: left;
+}
 
-    .QuickBookscol {
-        width: 100%;
-    }
+.hLine hr {
+    border: px solid #101010;
+    width: 30%;
+}
 
-    .cloudHosting {
-        width: 100%;
-    }
+.cloudHostingContent p {
+    border: px solid mediumspringgreen;
+    text-align: left;
+}
+
+.hostingButtons {
+    border: px solid midnightblue;
+}
+
+.comparePlans {
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+.exploreQuickBooksHosting {
+    width: 230px;
+    color:gray;
+    border:1px solid gray;
+    height: 40px;
+    border-radius:20px;
+}
+
+.unlimitedPtag{
+    border:px solid red;
+    margin-top:6vh;
+    padding: 0% 3%;
+}
+
+.buttonOfHostingPage{
+    border:px solid magenta;
+    background-color:#fbfbfb;
+}
+
+.cloudHostingButton{
+    border:none;
+    width:150px;
+    height:40px;
+    margin-right:2%;
+    border-radius:7px 7px 0px 0px;
+    background-color:#ff9600;
+    color:#fff;
+}
+
+.buyLicenceButton{
+    color:gray;
+    border:1px solid gray;
+    width:150px;
+    height:40px;
+    border-radius:7px 7px 0px 0px;
+}
+
+.unlimitedPtag p{
+    border:px solid green;
+    text-align:left;
+    margin:0px;
+}
+
+.unlimitedPtag p a{
+    color:#ff9600;
+}
+
+.cloudHostingImageCol {
+    border: px solid red;
+    padding: 0% 3%;
+}
+
+.cloudHostingImageCol img {
+    width: 100%;
+}
+
+.comparePlans {
+    height: 40px;
 }
